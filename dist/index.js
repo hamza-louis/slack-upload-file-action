@@ -43409,9 +43409,9 @@ async function uploadFile() {
         filename: filename,
       });
       core.setOutput("result", result);
-      console.log(`The File ${file} has been uploaded successfully:`, result);
+      console.log(`The File ${filename} has been uploaded successfully:`, result);
     } catch (error) {
-      console.error(`Error uploading file => ${file}:`, error);
+      console.error('Error uploading file:', error);
     }
   }
 
