@@ -1,0 +1,24 @@
+name: 'Slack Upload File Action'
+description: 'Upload a file from within a Github Workflow to a Slack channel'
+inputs:
+  path:
+    description: 'Path to the file to upload'
+    required: true
+  slack_app_token: 
+    description: 'Slack token to be used to auth'
+    required: true
+  slack_channel_id:
+    description: 'Target Slack channel ID'
+    required: true
+  initial_comment:
+    description: 'A text to be added to the message'
+    required: true 
+  filename:
+    description: 'The filename with a the proper file extension'
+    required: true 
+outputs:
+  result:
+    description: "response from slack"
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
