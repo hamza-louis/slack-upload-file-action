@@ -1,7 +1,7 @@
 name: 'Slack Upload File Action'
 description: 'Upload a file from within a Github Workflow to a Slack channel'
 inputs:
-  path:
+  slack_file_path:
     description: 'Path to the file to upload'
     required: true
   slack_app_token: 
@@ -10,10 +10,10 @@ inputs:
   slack_channel_id:
     description: 'Target Slack channel ID'
     required: true
-  initial_comment:
+  slack_file_upload_initial_comment:
     description: 'A text to be added to the message'
     required: true 
-  filename:
+  slack_file_upload_filename:
     description: 'The filename with a the proper file extension'
     required: true 
 
