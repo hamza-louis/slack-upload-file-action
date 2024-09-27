@@ -1,0 +1,2 @@
+## Slack Upload File Github Action
+> This action can be used to upload a file to a specific Slack channel, this action utilizing the new version of files.upload Slack API documented here -> [Slack new APIs to upload files]("https://api.slack.com/messaging/files#uploading_files")
